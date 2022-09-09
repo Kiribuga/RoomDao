@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.my_email.app.ui.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_addFolderForm"
+            app:destination="@id/addFolderForm" />
+        <action
+            android:id="@+id/action_mainFragment_to_addUserForm"
+            app:destination="@id/addUserForm" />
+        <action
+            android:id="@+id/action_mainFragment_to_deleteUserForm"
+            app:destination="@id/deleteUserForm" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentLetterWithChain"
+            app:destination="@id/fragmentLetterWithChain"
+            app:popUpTo="@id/mainFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_newLetterForm"
+            app:destination="@id/newLetterForm"
+            app:popUpTo="@id/mainFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_infoUserFragment"
+            app:destination="@id/infoUserFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/addFolderForm"
+        android:name="com.example.my_email.app.ui.AddFolderForm"
+        android:label="AddFolderForm"
+        tools:layout="@layout/form_add_folder" />
+    <dialog
+        android:id="@+id/addUserForm"
+        android:name="com.example.my_email.app.ui.AddUserForm"
+        android:label="AddUserForm"
+        tools:layout="@layout/form_add_user" />
+    <dialog
+        android:id="@+id/deleteUserForm"
+        android:name="com.example.my_email.app.ui.DeleteUserForm"
+        android:label="DeleteUserForm"
+        tools:layout="@layout/form_deleted_user" />
+    <fragment
+        android:id="@+id/fragmentLetterWithChain"
+        android:name="com.example.my_email.app.ui.FragmentLetterWithChain"
+        android:label="FragmentLetterWithChain"
+        tools:layout="@layout/letter_with_chain" >
+        <argument
+            android:name="idLetter"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/newLetterForm"
+        android:name="com.example.my_email.app.ui.NewLetterForm"
+        android:label="NewLetterForm"
+        tools:layout="@layout/form_new_letter" >
+        <argument
+            android:name="email"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <dialog
+        android:id="@+id/infoUserFragment"
+        android:name="com.example.my_email.app.ui.InfoUserFragment"
+        android:label="InfoUserFragment"
+        tools:layout="@layout/info_user_fragment" />
+</navigation>

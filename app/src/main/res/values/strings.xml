@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">My_email</string>
+    <string name="add_new_email">New email</string>
+    <string name="first">First</string>
+    <string name="name_folder">NameFolder</string>
+    <string name="create_new_letter">New letter</string>
+    <string name="new_folder">New folder</string>
+    <string name="delete_email">Delete email</string>
+    <string name="delete_folder">Delete folder</string>
+    <string name="theme_letter">Theme letter</string>
+    <string name="enter_theme">Enter the topic of the email</string>
+    <string name="enter_addressee">Enter the addressee</string>
+    <string name="enter_text">Enter the text of the letter</string>
+    <string name="send">Send</string>
+    <string name="enter_folder_name">Enter the folder name</string>
+    <string name="creating_folder">Creating folder</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="enter_email">Enter email</string>
+    <string name="deleting_folder">Deleting folder</string>
+    <string name="deleting_email">Deleting email</string>
+    <string name="count">25</string>
+    <string name="enter_first_name_user">Enter first name user</string>
+    <string name="enter_last_name_user">Enter last name user</string>
+    <string name="create_user">Create user</string>
+    <string name="enter_url_avatar">Enter URL avatar (optional)</string>
+    <string name="save_signature">Save signature</string>
+    <string name="insert_signature_in_text">Insert signature</string>
+    <string name="enter_or_select_a_signature">Enter or select a signature</string>
+    <string name="user_information">User information</string>
+    <string name="change_data">Change data</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="new_letter">New letter</string>
+    <string name="insert_file">Insert file</string>
+    <string name="delete_file">Delete file</string>
+</resources>
